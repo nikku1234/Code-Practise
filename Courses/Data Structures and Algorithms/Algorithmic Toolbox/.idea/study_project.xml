@@ -434,7 +434,7 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="88" />
+                                      <option name="length" value="89" />
                                       <option name="offset" value="303" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
@@ -555,7 +555,7 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
+                                      <option name="length" value="111" />
                                       <option name="offset" value="313" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
@@ -566,7 +566,7 @@
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="gcd.py" />
                                 <option name="text" value="# python3&#10;&#10;&#10;def gcd_naive(a, b):&#10;    assert 1 &lt;= a &lt;= 2 * 10 ** 9 and 1 &lt;= b &lt;= 2 * 10 ** 9&#10;&#10;    for divisor in range(min(a, b), 0, -1):&#10;        if a % divisor == 0 and b % divisor == 0:&#10;            return divisor&#10;&#10;    assert False&#10;&#10;&#10;def gcd(a, b):&#10;    assert 0 &lt;= a &lt;= 2 * 10 ** 9 and 0 &lt;= b &lt;= 2 * 10 ** 9&#10;&#10;    type here&#10;&#10;&#10;if __name__ == '__main__':&#10;    input_a, input_b = map(int, input().split())&#10;    print(gcd(input_a, input_b))&#10;" />
                                 <option name="trackChanges" value="true" />
@@ -697,18 +697,18 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
+                                      <option name="length" value="153" />
                                       <option name="offset" value="292" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
+                                      <option name="selected" value="true" />
                                       <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="lcm.py" />
                                 <option name="text" value="# python3&#10;&#10;&#10;def lcm_naive(a, b):&#10;    assert 1 &lt;= a &lt;= 2 * 10 ** 9 and 1 &lt;= b &lt;= 2 * 10 ** 9&#10;&#10;    multiple = max(a, b)&#10;    while multiple % a != 0 or multiple % b != 0:&#10;        multiple += 1&#10;&#10;    return multiple&#10;&#10;&#10;def lcm(a, b):&#10;    assert 1 &lt;= a &lt;= 2 * 10 ** 9 and 1 &lt;= b &lt;= 2 * 10 ** 9&#10;&#10;    type here&#10;&#10;&#10;if __name__ == '__main__':&#10;    input_a, input_b = map(int, input().split())&#10;    print(lcm(input_a, input_b))&#10;" />
                                 <option name="trackChanges" value="true" />
@@ -823,7 +823,7 @@
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
+                                      <option name="selected" value="true" />
                                       <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>

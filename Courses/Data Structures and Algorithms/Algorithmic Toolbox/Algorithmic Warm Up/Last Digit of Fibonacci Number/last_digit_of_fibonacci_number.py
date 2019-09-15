@@ -20,6 +20,7 @@ def last_digit_of_fibonacci_number(n):
     return c % 10
 
 
+
 if __name__ == '__main__':
     input_n = int(input())
     print(last_digit_of_fibonacci_number(input_n))

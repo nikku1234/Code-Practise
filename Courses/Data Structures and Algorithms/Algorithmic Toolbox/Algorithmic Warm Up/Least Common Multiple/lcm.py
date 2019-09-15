@@ -14,7 +14,13 @@ def lcm_naive(a, b):
 def lcm(a, b):
     assert 1 <= a <= 2 * 10 ** 9 and 1 <= b <= 2 * 10 ** 9
 
-    type here
+    larger = max(a,b)
+    smaller= min(a,b)
+    if larger%smaller == 0:
+        return (a*b)/smaller
+    else:
+        larger = smaller
+        smaller = mod
 
 
 if __name__ == '__main__':

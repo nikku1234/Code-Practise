@@ -14,7 +14,16 @@ def gcd_naive(a, b):
 def gcd(a, b):
     assert 0 <= a <= 2 * 10 ** 9 and 0 <= b <= 2 * 10 ** 9
 
-    type here
+    if b == 0:
+        return a
+    c = a%b
+    gcd(b,c)
+
+    if a>b:
+        gcd(a,b)
+    else :
+        gcd(b,a)
+
 
 
 if __name__ == '__main__':
