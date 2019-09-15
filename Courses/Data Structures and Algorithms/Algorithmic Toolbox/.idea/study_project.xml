@@ -818,8 +818,8 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="0" />
-                                      <option name="offset" value="369" />
+                                      <option name="length" value="363" />
+                                      <option name="offset" value="365" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
