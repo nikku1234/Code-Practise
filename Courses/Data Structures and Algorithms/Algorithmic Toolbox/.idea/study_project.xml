@@ -313,7 +313,7 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="86" />
+                                      <option name="length" value="115" />
                                       <option name="offset" value="225" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
@@ -349,7 +349,7 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
+                                      <option name="length" value="7" />
                                       <option name="offset" value="334" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />

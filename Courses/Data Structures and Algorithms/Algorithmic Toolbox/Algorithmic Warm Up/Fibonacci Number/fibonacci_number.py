@@ -13,10 +13,11 @@ def fibonacci_number_naive(n):
 def fibonacci_number(n):
     assert 0 <= n <= 40
     a,b = 0,1
+    if n<=1:
+        return n
     for _ in range (n-1):
         c = a+b
         b,a =c,b
-
     return c
 
 
