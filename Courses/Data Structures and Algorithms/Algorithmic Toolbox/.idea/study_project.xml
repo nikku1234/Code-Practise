@@ -697,8 +697,8 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="153" />
-                                      <option name="offset" value="292" />
+                                      <option name="length" value="34" />
+                                      <option name="offset" value="525" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
@@ -733,18 +733,18 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
+                                      <option name="length" value="16" />
                                       <option name="offset" value="337" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
+                                      <option name="selected" value="true" />
                                       <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="lcm_unit_tests.py" />
                                 <option name="text" value="import unittest&#10;from itertools import product&#10;from lcm import lcm, lcm_naive&#10;&#10;&#10;class TestLCM(unittest.TestCase):&#10;    def test_small(self):&#10;        for (a, b) in product(range(1, 15), repeat=2):&#10;            self.assertEqual(lcm(a, b), lcm_naive(a, b))&#10;&#10;    def test_large(self):&#10;        for (a, b, m) in [(28851538, 1183019, 1933053046), type here]:&#10;            self.assertEqual(lcm(a, b), m)&#10;&#10;&#10;if __name__ == '__main__':&#10;    unittest.main()&#10;" />
                                 <option name="trackChanges" value="true" />
