@@ -818,7 +818,7 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
+                                      <option name="length" value="0" />
                                       <option name="offset" value="369" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
@@ -829,7 +829,7 @@
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="fibonacci_number_again.py" />
                                 <option name="text" value="# python3&#10;&#10;&#10;def fibonacci_number_again_naive(n, m):&#10;    assert 0 &lt;= n &lt;= 10 ** 18 and 2 &lt;= m &lt;= 10 ** 3&#10;&#10;    if n &lt;= 1:&#10;        return n&#10;&#10;    previous, current = 0, 1&#10;    for _ in range(n - 1):&#10;        previous, current = current, (previous + current) % m&#10;&#10;    return current&#10;&#10;&#10;def fibonacci_number_again(n, m):&#10;    assert 0 &lt;= n &lt;= 10 ** 18 and 2 &lt;= m &lt;= 10 ** 3&#10;&#10;    type here&#10;&#10;&#10;if __name__ == '__main__':&#10;    input_n, input_m = map(int, input().split())&#10;    print(fibonacci_number_again(input_n, input_m))&#10;" />
                                 <option name="trackChanges" value="true" />
