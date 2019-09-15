@@ -560,7 +560,7 @@
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
+                                      <option name="selected" value="true" />
                                       <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
