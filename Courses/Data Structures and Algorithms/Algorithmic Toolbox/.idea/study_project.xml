@@ -414,7 +414,7 @@
                       <option name="index" value="2" />
                       <option name="name" value="Last Digit of Fibonacci Number" />
                       <option name="record" value="-1" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Failed" />
                       <option name="files">
                         <map>
                           <entry key="last_digit_of_fibonacci_number.py">
@@ -434,13 +434,13 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="89" />
-                                      <option name="offset" value="303" />
+                                      <option name="length" value="88" />
+                                      <option name="offset" value="332" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
                                       <option name="selected" value="true" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Failed" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
@@ -470,18 +470,18 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
+                                      <option name="length" value="8" />
                                       <option name="offset" value="466" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Failed" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="last_digit_of_fibonacci_number_unit_tests.py" />
                                 <option name="text" value="import unittest&#10;from last_digit_of_fibonacci_number import last_digit_of_fibonacci_number, last_digit_of_fibonacci_number_naive&#10;&#10;&#10;class TestLastDigitOfFibonacciNumber(unittest.TestCase):&#10;    def test_small(self):&#10;        for n in range(20):&#10;            self.assertEqual(last_digit_of_fibonacci_number_naive(n),&#10;                             last_digit_of_fibonacci_number(n))&#10;&#10;    def test_large(self):&#10;        for (n, last_digit) in [(100, 5), (139, 1), (91239, 6), type here]:&#10;            self.assertEqual(last_digit_of_fibonacci_number(n), last_digit)&#10;&#10;&#10;if __name__ == '__main__':&#10;    unittest.main()&#10;" />
                                 <option name="trackChanges" value="true" />
