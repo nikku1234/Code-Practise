@@ -947,7 +947,7 @@
                       <option name="index" value="6" />
                       <option name="name" value="Last Digit of the Sum of Fibonacci Numbers" />
                       <option name="record" value="-1" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Failed" />
                       <option name="files">
                         <map>
                           <entry key="last_digit_of_the_sum_of_fibonacci_numbers.py">
@@ -967,18 +967,18 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
+                                      <option name="length" value="140" />
                                       <option name="offset" value="470" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Failed" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="last_digit_of_the_sum_of_fibonacci_numbers.py" />
                                 <option name="text" value="# python3&#10;&#10;&#10;def last_digit_of_the_sum_of_fibonacci_numbers_naive(n):&#10;    assert 0 &lt;= n &lt;= 10 ** 18&#10;&#10;    if n &lt;= 1:&#10;        return n&#10;&#10;    fibonacci_numbers = [0] * (n + 1)&#10;    fibonacci_numbers[0] = 0&#10;    fibonacci_numbers[1] = 1&#10;    for i in range(2, n + 1):&#10;        fibonacci_numbers[i] = fibonacci_numbers[i - 2] + fibonacci_numbers[i - 1]&#10;&#10;    return sum(fibonacci_numbers) % 10&#10;&#10;&#10;def last_digit_of_the_sum_of_fibonacci_numbers(n):&#10;    assert 0 &lt;= n &lt;= 10 ** 18&#10;&#10;    type here&#10;&#10;&#10;if __name__ == '__main__':&#10;    input_n = int(input())&#10;    print(last_digit_of_the_sum_of_fibonacci_numbers(input_n))&#10;" />
                                 <option name="trackChanges" value="true" />
@@ -1003,18 +1003,18 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
+                                      <option name="length" value="3" />
                                       <option name="offset" value="513" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
                                       <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Failed" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="last_digit_of_the_sum_of_fibonacci_numbers_unit_tests.py" />
                                 <option name="text" value="import unittest&#10;from last_digit_of_the_sum_of_fibonacci_numbers import last_digit_of_the_sum_of_fibonacci_numbers, last_digit_of_the_sum_of_fibonacci_numbers_naive&#10;&#10;&#10;class TestLastDigitOfTheSumOfFibonacciNumbers(unittest.TestCase):&#10;    def test_small(self):&#10;        for n in range(20):&#10;            self.assertEqual(last_digit_of_the_sum_of_fibonacci_numbers(n),&#10;                             last_digit_of_the_sum_of_fibonacci_numbers_naive(n))&#10;&#10;    def test_large(self):&#10;        for (n, last_digit) in [(100, 5), type here]:&#10;            self.assertEqual(last_digit_of_the_sum_of_fibonacci_numbers(n), last_digit)&#10;&#10;&#10;if __name__ == '__main__':&#10;    unittest.main()&#10;" />
                                 <option name="trackChanges" value="true" />
@@ -1089,17 +1089,17 @@
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
                                       <option name="length" value="9" />
-                                      <option name="offset" value="608" />
+                                      <option name="offset" value="709" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
+                                      <option name="selected" value="true" />
                                       <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="last_digit_of_the_sum_of_fibonacci_numbers_again.py" />
                                 <option name="text" value="# python3&#10;&#10;&#10;def last_digit_of_the_sum_of_fibonacci_numbers_again_naive(from_index, to_index):&#10;    assert 0 &lt;= from_index &lt;= to_index &lt;= 10 ** 18&#10;&#10;    if to_index == 0:&#10;        return 0&#10;&#10;    fibonacci_numbers = [0] * (to_index + 1)&#10;    fibonacci_numbers[0] = 0&#10;    fibonacci_numbers[1] = 1&#10;    for i in range(2, to_index + 1):&#10;        fibonacci_numbers[i] = fibonacci_numbers[i - 2] + fibonacci_numbers[i - 1]&#10;&#10;    return sum(fibonacci_numbers[from_index:to_index + 1]) % 10&#10;&#10;&#10;def last_digit_of_the_sum_of_fibonacci_numbers_again(from_index, to_index):&#10;    assert 0 &lt;= from_index &lt;= to_index &lt;= 10 ** 18&#10;&#10;    type here&#10;&#10;&#10;if __name__ == '__main__':&#10;    input_from, input_to = map(int, input().split())&#10;    print(last_digit_of_the_sum_of_fibonacci_numbers_again(input_from, input_to))&#10;" />
                                 <option name="trackChanges" value="true" />
