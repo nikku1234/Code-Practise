@@ -10,17 +10,21 @@ def lcm_naive(a, b):
 
     return multiple
 
+def gcd_euclid(a, b):
+    dividend = a if (a >= b) else b
+    divisor = a if (a <= b) else b
+
+    while divisor != 0:
+        remainder = dividend % divisor
+        dividend = divisor
+        divisor = remainder
+
+    return dividend
 
 def lcm(a, b):
     assert 1 <= a <= 2 * 10 ** 9 and 1 <= b <= 2 * 10 ** 9
 
-    larger = max(a,b)
-    smaller= min(a,b)
-    if larger%smaller == 0:
-        return (a*b)/smaller
-    else:
-        larger = smaller
-        smaller = mod
+    return (a * b) // gcd_euclid(a, b)
 
 
 if __name__ == '__main__':
