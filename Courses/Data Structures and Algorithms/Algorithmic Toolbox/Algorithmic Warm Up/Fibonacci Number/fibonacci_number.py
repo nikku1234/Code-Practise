@@ -14,8 +14,8 @@ def fibonacci_number(n):
     assert 0 <= n <= 40
     a,b = 0,1
     for _ in range (n-1):
-        c= a+b
-        b,a=c,b
+        c = a+b
+        b,a =c,b
 
     return c
 

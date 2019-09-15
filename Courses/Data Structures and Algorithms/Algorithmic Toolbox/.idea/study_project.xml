@@ -313,7 +313,7 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="85" />
+                                      <option name="length" value="86" />
                                       <option name="offset" value="225" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
@@ -354,13 +354,13 @@
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
+                                      <option name="selected" value="true" />
                                       <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="fibonacci_number_unit_tests.py" />
                                 <option name="text" value="import unittest&#10;from fibonacci_number import fibonacci_number, fibonacci_number_naive&#10;&#10;&#10;class TestFibonacciNumber(unittest.TestCase):&#10;    def test_small(self):&#10;        for n in range(8):&#10;            self.assertEqual(fibonacci_number(n), fibonacci_number_naive(n))&#10;&#10;    def test_large(self):&#10;        for (n, Fn) in [(30, 832040), (35, type here), (40, 102334155)]:&#10;            self.assertEqual(fibonacci_number(n), Fn)&#10;&#10;&#10;if __name__ == '__main__':&#10;    unittest.main()&#10;" />
                                 <option name="trackChanges" value="true" />
@@ -434,18 +434,18 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
+                                      <option name="length" value="88" />
                                       <option name="offset" value="303" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
+                                      <option name="selected" value="true" />
                                       <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="last_digit_of_fibonacci_number.py" />
                                 <option name="text" value="# python3&#10;&#10;&#10;def last_digit_of_fibonacci_number_naive(n):&#10;    assert 0 &lt;= n &lt;= 10 ** 6&#10;&#10;    if n &lt;= 1:&#10;        return n&#10;&#10;    return (last_digit_of_fibonacci_number_naive(n - 1) + last_digit_of_fibonacci_number_naive(n - 2)) % 10&#10;&#10;&#10;def last_digit_of_fibonacci_number(n):&#10;    assert 0 &lt;= n &lt;= 10 ** 6&#10;&#10;    type here&#10;&#10;&#10;if __name__ == '__main__':&#10;    input_n = int(input())&#10;    print(last_digit_of_fibonacci_number(input_n))&#10;" />
                                 <option name="trackChanges" value="true" />
