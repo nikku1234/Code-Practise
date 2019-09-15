@@ -313,18 +313,18 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
-                                      <option name="offset" value="230" />
+                                      <option name="length" value="85" />
+                                      <option name="offset" value="225" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
+                                      <option name="selected" value="true" />
                                       <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="fibonacci_number.py" />
                                 <option name="text" value="# python3&#10;&#10;&#10;def fibonacci_number_naive(n):&#10;    assert 0 &lt;= n &lt;= 40&#10;&#10;    if n &lt;= 1:&#10;        return n&#10;&#10;    return fibonacci_number_naive(n - 1) + fibonacci_number_naive(n - 2)&#10;&#10;&#10;def fibonacci_number(n):&#10;    assert 0 &lt;= n &lt;= 40&#10;&#10;    type here&#10;&#10;&#10;if __name__ == '__main__':&#10;    input_n = int(input())&#10;    print(fibonacci_number(input_n))&#10;" />
                                 <option name="trackChanges" value="true" />
