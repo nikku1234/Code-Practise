@@ -14,15 +14,15 @@ def gcd_naive(a, b):
 def gcd(a, b):
     assert 0 <= a <= 2 * 10 ** 9 and 0 <= b <= 2 * 10 ** 9
 
-    if b == 0:
-        return a
-    c = a%b
-    gcd(b,c)
+    dividend = a if (a >= b) else b
+    divisor = a if (a <= b) else b
 
-    if a>b:
-        gcd(a,b)
-    else :
-        gcd(b,a)
+    while divisor != 0:
+        remainder = dividend % divisor
+        dividend = divisor
+        divisor = remainder
+
+    return dividend
 
 
 if __name__ == '__main__':

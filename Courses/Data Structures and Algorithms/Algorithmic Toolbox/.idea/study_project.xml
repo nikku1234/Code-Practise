@@ -535,7 +535,7 @@
                       <option name="index" value="3" />
                       <option name="name" value="Greatest Common Divisor" />
                       <option name="record" value="-1" />
-                      <option name="status" value="Failed" />
+                      <option name="status" value="Unchecked" />
                       <option name="files">
                         <map>
                           <entry key="gcd.py">
@@ -555,13 +555,13 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="110" />
+                                      <option name="length" value="206" />
                                       <option name="offset" value="313" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
                                       <option name="selected" value="true" />
-                                      <option name="status" value="Failed" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
@@ -591,13 +591,13 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="7" />
+                                      <option name="length" value="5" />
                                       <option name="offset" value="148" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
                                       <option name="selected" value="true" />
-                                      <option name="status" value="Failed" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                     <AnswerPlaceholder>
@@ -613,12 +613,12 @@
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
                                       <option name="length" value="0" />
-                                      <option name="offset" value="309" />
+                                      <option name="offset" value="301" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
                                       <option name="selected" value="true" />
-                                      <option name="status" value="Failed" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>

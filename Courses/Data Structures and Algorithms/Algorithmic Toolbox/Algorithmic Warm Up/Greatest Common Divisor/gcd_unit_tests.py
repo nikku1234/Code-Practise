@@ -4,11 +4,11 @@ from gcd import gcd, gcd_naive
 
 class TestGCD(unittest.TestCase):
     def test_small(self):
-        for (a, b) in [(1, 1), (2, 6), (10,12)]:
+        for (a, b) in [(1, 1), (2, 6), (9,3)]:
             self.assertEqual(gcd(a, b), gcd_naive(a, b))
 
     def test_large(self):
-        for (a, b, d) in [(28851538, 1183019, 17657),(100,200,300) ]:
+        for (a, b, d) in [(28851538, 1183019, 17657),(1,2,1) ]:
             self.assertEqual(gcd(a, b), d)
 
 
