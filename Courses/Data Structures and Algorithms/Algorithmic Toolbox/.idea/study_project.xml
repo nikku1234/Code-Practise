@@ -414,7 +414,7 @@
                       <option name="index" value="2" />
                       <option name="name" value="Last Digit of Fibonacci Number" />
                       <option name="record" value="-1" />
-                      <option name="status" value="Failed" />
+                      <option name="status" value="Unchecked" />
                       <option name="files">
                         <map>
                           <entry key="last_digit_of_fibonacci_number.py">
@@ -440,7 +440,7 @@
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
                                       <option name="selected" value="true" />
-                                      <option name="status" value="Failed" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
@@ -476,7 +476,7 @@
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
                                       <option name="selected" value="true" />
-                                      <option name="status" value="Failed" />
+                                      <option name="status" value="Unchecked" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
@@ -535,7 +535,7 @@
                       <option name="index" value="3" />
                       <option name="name" value="Greatest Common Divisor" />
                       <option name="record" value="-1" />
-                      <option name="status" value="Unchecked" />
+                      <option name="status" value="Failed" />
                       <option name="files">
                         <map>
                           <entry key="gcd.py">
@@ -555,13 +555,13 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="111" />
+                                      <option name="length" value="110" />
                                       <option name="offset" value="313" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
                                       <option name="selected" value="true" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="status" value="Failed" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
@@ -591,13 +591,13 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
+                                      <option name="length" value="7" />
                                       <option name="offset" value="148" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Failed" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                     <AnswerPlaceholder>
@@ -612,18 +612,18 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="9" />
-                                      <option name="offset" value="298" />
+                                      <option name="length" value="0" />
+                                      <option name="offset" value="309" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
-                                      <option name="status" value="Unchecked" />
+                                      <option name="selected" value="true" />
+                                      <option name="status" value="Failed" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
                                   </list>
                                 </option>
-                                <option name="highlightErrors" value="false" />
+                                <option name="highlightErrors" value="true" />
                                 <option name="name" value="gcd_unit_tests.py" />
                                 <option name="text" value="import unittest&#10;from gcd import gcd, gcd_naive&#10;&#10;&#10;class TestGCD(unittest.TestCase):&#10;    def test_small(self):&#10;        for (a, b) in [(1, 1), (2, 6), type here]:&#10;            self.assertEqual(gcd(a, b), gcd_naive(a, b))&#10;&#10;    def test_large(self):&#10;        for (a, b, d) in [(28851538, 1183019, 17657), type here]:&#10;            self.assertEqual(gcd(a, b), d)&#10;&#10;&#10;if __name__ == '__main__':&#10;    unittest.main()&#10;" />
                                 <option name="trackChanges" value="true" />
