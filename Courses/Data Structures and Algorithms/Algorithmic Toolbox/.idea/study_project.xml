@@ -967,8 +967,8 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="116" />
-                                      <option name="offset" value="470" />
+                                      <option name="length" value="169" />
+                                      <option name="offset" value="469" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
@@ -1003,12 +1003,12 @@
                                         </MyInitialState>
                                       </option>
                                       <option name="initializedFromDependency" value="false" />
-                                      <option name="length" value="3" />
+                                      <option name="length" value="5" />
                                       <option name="offset" value="513" />
                                       <option name="placeholderDependency" />
                                       <option name="placeholderText" value="type here" />
                                       <option name="possibleAnswer" value="" />
-                                      <option name="selected" value="false" />
+                                      <option name="selected" value="true" />
                                       <option name="status" value="Failed" />
                                       <option name="studentAnswer" />
                                     </AnswerPlaceholder>
