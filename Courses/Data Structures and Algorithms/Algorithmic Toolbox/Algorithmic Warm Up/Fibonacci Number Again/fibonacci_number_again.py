@@ -22,7 +22,7 @@ def fibonacci_number_again(n, m):
     # Perform fast exponentiation of the matrix (quickly raise it to the nth power)
     for rec in bin(n)[3:]:
         calc = (v2*v2) % m
-        print(rec,calc)
+        #print(rec,calc)
         v1, v2, v3 = (v1*v1+calc) % m, ((v1+v3)*v2) % m, (calc+v3*v3) % m
         if rec == '1':
             v1, v2, v3 = (v1+v2) % m, v1, v2

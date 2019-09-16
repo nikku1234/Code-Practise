@@ -29,5 +29,5 @@ def last_digit_of_the_sum_of_fibonacci_numbers(n):
 
 if __name__ == '__main__':
     input_n = int(input())
-    print(last_digit_of_the_sum_of_fibonacci_numbers_naive(3))
+    #print(last_digit_of_the_sum_of_fibonacci_numbers_naive(3))
     print(last_digit_of_the_sum_of_fibonacci_numbers(input_n))

@@ -19,7 +19,12 @@ def last_digit_of_the_sum_of_squares_of_fibonacci_numbers_naive(n):
 def last_digit_of_the_sum_of_squares_of_fibonacci_numbers(n):
     assert 0 <= n <= 10 ** 18
 
-    type here
+    a=0
+    b=1
+    for _ in range(n):
+        a,b= b,a+b
+
+    return b*(b-a)
 
 
 if __name__ == '__main__':

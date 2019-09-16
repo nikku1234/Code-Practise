@@ -18,14 +18,17 @@ def last_digit_of_the_sum_of_fibonacci_numbers_again_naive(from_index, to_index)
 
 def last_digit_of_the_sum_of_fibonacci_numbers_again(from_index, to_index):
     assert 0 <= from_index <= to_index <= 10 ** 18
+    a = 0
+    b = 1
+    sum = 0
+    for i in range(to_index):
+        if (i >= from_index):
+            a,b = b%10, a+b%10
+            sum = (sum + a) % 10
+        else :
+            a,b=b,a+b
 
-    a,b = 0,1
-    if n<=1:
-        return n
-    for _ in range (n-1):
-        c = a+b
-        b,a =c,b
-    return c
+    return sum
 
 if __name__ == '__main__':
     input_from, input_to = map(int, input().split())

@@ -4,12 +4,12 @@ from last_digit_of_the_sum_of_squares_of_fibonacci_numbers import last_digit_of_
 
 class TestLastDigitOfTheSumOfSquaresOfFibonacciNumbers(unittest.TestCase):
     def test_small(self):
-        for n in range(20):
+        for n in range(100):
             self.assertEqual(last_digit_of_the_sum_of_squares_of_fibonacci_numbers(n),
                              last_digit_of_the_sum_of_squares_of_fibonacci_numbers_naive(n))
 
     def test_large(self):
-        for (n, last_digit) in [(73, 1), (1234567890, 0), type here]:
+        for (n, last_digit) in [(73, 1), (1234567890, 0), (73, 1)]:
             self.assertEqual(last_digit_of_the_sum_of_squares_of_fibonacci_numbers(n), last_digit)
 
 
