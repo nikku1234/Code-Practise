@@ -1,0 +1,134 @@
+type: edu
+files:
+- name: logo.png
+  visible: false
+  text: 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
+  learner_created: false
+- name: organizing_lottery.py
+  visible: true
+  placeholders:
+  - offset: 416
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 416
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+    from sys import stdin
+    from bisect import bisect_left, bisect_right
+
+
+    def points_cover_naive(starts, ends, points):
+        assert len(starts) == len(ends)
+        count = [0] * len(points)
+
+        for index, point in enumerate(points):
+            for start, end in zip(starts, ends):
+                if start <= point <= end:
+                    count[index] += 1
+
+        return count
+
+
+    def points_cover(starts, ends, points):
+        type here
+
+
+    if __name__ == '__main__':
+        data = list(map(int, stdin.read().split()))
+        n, m = data[0], data[1]
+        input_starts, input_ends = data[2:2 * n + 2:2], data[3:2 * n + 2:2]
+        input_points = data[2 * n + 2:]
+
+        output_count = points_cover(input_starts, input_ends, input_points)
+        print(" ".join(map(str, output_count)))
+  learner_created: false
+- name: organizing_lottery_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 245
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 245
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  - offset: 456
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 456
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  - offset: 501
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 501
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from organizing_lottery import points_cover, points_cover_naive
+
+
+    class PointsAndSegments(unittest.TestCase):
+        def test_small(self):
+            for starts, ends, points in [
+                ([0, 7], [5, 10], [1, 6, 11]),
+                type here
+            ]:
+                self.assertEqual(points_cover(list(starts), list(ends), list(points)),
+                                 points_cover_naive(starts, ends, points))
+
+        def test_random(self):
+            type here
+
+        def test_large(self):
+            type here
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from organizing_lottery import points_cover, points_cover_naive
+    from random import randint
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("organizing_lottery_unit_tests.py")
+
+        all_tests_passed = True
+
+        for n in (3, 4, 5, 10, 100):
+            for m in (3, 4, 100, 200):
+                points = [randint(-10, 10) for _ in range(m)]
+                starts = [randint(-5, 0) for _ in range(n)]
+                ends = [randint(0, 5) for _ in range(n)]
+
+                if points_cover(starts, ends, points) != points_cover_naive(starts, ends, points):
+                    all_tests_passed = False
+                    failed("Wrong answer for starts={}, ends={}, points={}".format(starts, ends, points))
+                    break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-3-divide-and-conquer/discussions
+status: Unchecked
+record: -1

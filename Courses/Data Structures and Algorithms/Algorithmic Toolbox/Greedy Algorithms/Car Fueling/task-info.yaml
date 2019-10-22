@@ -1,0 +1,110 @@
+type: edu
+files:
+- name: car_fueling.py
+  visible: true
+  placeholders:
+  - offset: 259
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 259
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def compute_min_number_of_refills(d, m, stops):
+        assert 1 <= d <= 10 ** 5
+        assert 1 <= m <= 400
+        assert 1 <= len(stops) <= 300
+        assert 0 < stops[0] and all(stops[i] < stops[i + 1] for i in range(len(stops) - 1)) and stops[-1] < d
+
+        type here
+
+
+    if __name__ == '__main__':
+        input_d = int(input())
+        input_m = int(input())
+        input_n = int(input())
+        input_stops = list(map(int, input().split()))
+        assert len(input_stops) == input_n
+
+        print(compute_min_number_of_refills(input_d, input_m, input_stops))
+  learner_created: false
+- name: car_fueling_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 307
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 307
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from car_fueling import compute_min_number_of_refills
+
+
+    class CarFueling(unittest.TestCase):
+        def test(self):
+            for (d, m, stops, answer) in [
+                (950, 400, [200, 375, 550, 750], 2),
+                (10, 3, [1, 2, 5, 9], -1),
+                (200, 250, [100, 150], 0),
+                type here
+            ]:
+                self.assertEqual(compute_min_number_of_refills(d, m, stops), answer)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: logo.png
+  visible: false
+  text: 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
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from car_fueling import compute_min_number_of_refills
+
+
+    def reference(distance, tank, stops):
+        stops = [0] + stops + [distance]
+        num_refills, cur_refill = 0, 0
+        while cur_refill <= len(stops) - 2:
+            last_refill = cur_refill
+            while cur_refill <= len(stops) - 2 and stops[cur_refill + 1] - stops[last_refill] <= tank:
+                cur_refill += 1
+            if cur_refill == last_refill:
+                return -1
+            if cur_refill <= len(stops) - 2:
+                num_refills += 1
+
+        return num_refills
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("car_fueling_unit_tests.py")
+
+        all_tests_passed = True
+        for (d, m, stops) in [(500, 200, [100, 200, 300, 400])]:
+            if reference(d, m, stops) != compute_min_number_of_refills(d, m, stops):
+                all_tests_passed = False
+                failed("Wrong answer for d={}, m={}, stops={}".format(d, m, stops))
+                break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/discussions
+status: Unchecked
+record: -1

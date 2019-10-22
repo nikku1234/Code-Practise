@@ -1,0 +1,72 @@
+type: edu
+files:
+- name: logo.png
+  visible: false
+  text: iVBORw0KGgoAAAANSUhEUgAAAm8AAAIsCAMAAACTJL54AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAQlBMVEX///+SkpKSkpKSkpKSkpJEZ/xEZ/xEZxlEZ51EZ9JEZ7pEZ/xEZ3lEZ/xEZ+hEZ09EZ/xEZ/xEZ/ySkpJEZ/z///9SIN04AAAAE3RSTlMAiLuZRCJmiLvdzESqEe6ZM1V3XtKziwAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAAMgAAADIAGP6560AAAAHdElNRQfjBRwXNSF5GsPGAAAJqElEQVR42u3d63aqOACAUc8FEkAuMn3/Zx3bWmsrtmoh8ej+fnatGTy4JQkCrlZz9Ou3dNSv1UL9/k866jdv4k288aYb9/bnl7Trz/Le/q6kXX95E2/ijTfxJt54E2/iTbzxJt7EG2/iTbxJvIk38cabeBNvvIk38SbeeBNv4o038SbeeBNv4k288SbexBtv4k28iTfexJt44028iTfexJt4E2+8iTfxxpt4E2/ijTfxJt54E2/ijTfxJt7EG2/iTbzxJt7Em8SbeBNvvIk38cabeBNv4o038SbeeBNv4o038SbexBtv4k288SbexJt44028iTfexJt44028iTfxxpt4E2+8iTfxJt54E2/ijTfxJt54E2/iTbzxJt7EG2/iTbxJvIk38cabeBNvvIk38SbeeBNv4o038SbeeBNv4k288SbexBtv4k28iTfexJt44028iTfexJt4E2+8iTfxxpt4E2/ijTfxJt54E2/ijTfxJt7EG2/iTbzxJt7Em8SbeBNvvIk38cabeBNv4o038SbeeBNv4o038SbexBtv4k288SbexJt44028iTfexJt44028iTfxxpt4E2+8iTfxJt54E2/ijTfxJt54E2/iTbzxJt7EG2/iTbxJvIk38cabeBNvvIk38SbeeBNv4o038SbeeBNv4k288SbexBtv4k28iTfexJt44028iTfexJt4E2+8iTfxxpt4E2/ijTfxJt54E2/ijTfxJt7EG2/iTbzxJt7Em8SbeBNvvIk38cabeBNv4o038SbeeBNv4o038SbexBtv4u2iijLEWNUxhib9xpuwjnW13XbZ5vnXt81L3/6Nt3kq49N7XV8kfa9DdbDx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
+  learner_created: false
+- name: sum_of_two_digits.py
+  visible: true
+  placeholders:
+  - offset: 220
+    length: 20
+    placeholder_text: write your code here
+    initial_state:
+      length: 20
+      offset: 220
+    initialized_from_dependency: false
+    selected: false
+    status: Failed
+  text: |
+    # python3 (this comment tells the grading system at Coursera to use python3 rather than python3)
+
+
+    def sum_of_two_digits(first_digit, second_digit):
+        assert 0 <= first_digit <= 9 and 0 <= second_digit <= 9
+        return write your code here
+
+
+    if __name__ == '__main__':
+        a, b = map(int, input().split())
+        print(sum_of_two_digits(a, b))
+  learner_created: false
+- name: sum_of_two_digits_unit_tests.py
+  visible: true
+  text: |
+    import unittest
+    from itertools import product
+    from sum_of_two_digits import sum_of_two_digits
+
+
+    class TestSumOfTwoDigits(unittest.TestCase):
+        def test_all_inputs(self):
+            for first_digit, second_digit in product(range(10), repeat=2):
+                self.assertEqual(sum_of_two_digits(first_digit, second_digit), first_digit + second_digit)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from itertools import product
+    from sum_of_two_digits import sum_of_two_digits
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("sum_of_two_digits_unit_tests.py")
+
+        all_tests_passed = True
+        for a, b in product(range(10), repeat=2):
+            if sum_of_two_digits(a, b) != a + b:
+                all_tests_passed = False
+                failed("Wrong answer for a={}, b={}".format(a, b))
+                break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/ZtG0y/a-plus-b/discussions
+status: Failed
+record: -1

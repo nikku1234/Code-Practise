@@ -1,0 +1,150 @@
+type: edu
+files:
+- name: binary_search.py
+  visible: true
+  placeholders:
+  - offset: 284
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 284
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def linear_search(keys, query):
+        for i in range(len(keys)):
+            if keys[i] == query:
+                return i
+
+        return -1
+
+
+    def binary_search(keys, query):
+        assert all(keys[i] < keys[i + 1] for i in range(len(keys) - 1))
+        assert 1 <= len(keys) <= 10 ** 4
+
+        type here
+
+
+    if __name__ == '__main__':
+        input_n = int(input())
+        input_keys = list(map(int, input().split()))
+        assert len(input_keys) == input_n
+        input_m = int(input())
+        input_queries = list(map(int, input().split()))
+        assert len(input_queries) == input_m
+
+        for q in input_queries:
+            print(binary_search(input_keys, q), end=' ')
+  learner_created: false
+- name: binary_search_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 241
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 241
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  - offset: 520
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 520
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from binary_search import binary_search, linear_search
+
+
+    class TestBinarySearch(unittest.TestCase):
+        def test_small(self):
+            for (keys, query) in [
+                ([1, 2, 3], 1),
+                ([4, 5, 6], 7),
+                type here
+            ]:
+                self.assertEqual(
+                    linear_search(keys, query),
+                    binary_search(keys, query)
+                )
+
+        def test_large(self):
+            for (keys, query, answer) in [
+                (list(range(10 ** 4)), 10 ** 4, -1),
+                type here
+                (list(range(10 ** 4)), 239, 239),
+            ]:
+                self.assertEqual(binary_search(keys, query), answer)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: logo.png
+  visible: false
+  text: iVBORw0KGgoAAAANSUhEUgAAAmcAAAIsCAMAAACA8/6MAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABCFBMVEX///+SkpKSkpKSkpKSkpKSkpKTk5OTk5OTk5OTk5N+fn6SkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKSkpKTk5OSkpKBgYGSkpJ8fHySkpIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACSkpKTk5Nubm6GhoaSkpKNjY15eXmSkpKSkpKSkpKSkpKSkpKLi4t/f3+GhoaSkpKQkJCqvcm0zt6isLiaoaWYn6OksrqSlJXD5/ypvMidp6yaoqanuMGTlpenxth1iZVbbHaAmKa01uloe4Sat8iNp7dOXGUAAAANDxE0PkMaHyJBTVQnLjKXm56QkZH///+YLG46AAAAN3RSTlMAM7tE3Yh1UGlc7neZVcwiqmYR2YSb8c/sxxGIVXciM0Rmme67qt3MzZ/h9ZL96sjf1sTR+u/6YnuvKAAAAAFiS0dEAIgFHUgAAAAJcEhZcwAAAMgAAADIAGP6560AAAAHdElNRQfjBR0ANSnWFJlkAAAa90lEQVR42u3deWPiSHrHcXzgmcFuX5vd6QWb2zj3HsmGziTZJZtdIWSJQpjk/b+UlAQYCaqEqgAPx/f3V8+4y5LKHz8lVZXoQmGDnJ0TspqzwnZz0SVkNRc4IzgjOMMZ+XmdXRYJmedyZ87OC4TMc44zgjOCM5wRnBGcEZzhjOCM4AxnBGcEZwRnOCM4IzijcwnOCM4IznBGcEZwRnCGM4IzgjOcEZwRnBGc4YzgjOAMZwRnBGcEZzgjOCM4IwRnBGcEZzgjOCM4IzjDGcEZwRnOCM4IzgjOcEZwRnCGM4IzgjOCM5wRnBGcEZzhjOCM4AxnBGcEZwRnOCM4IzjDGcEZwRnBGc4IzgjOCMEZwRnBGc4IzgjOCM5wRnBGcIYzgjOCM4IznBGcEZzhjOCM4IzgDGcEZwRnhOCM4IzgDGcEZwRnBGc4IzgjOMMZwRnBGcEZzgjOCM5wRnBGcEZwhjOCM4IzgjOcEZwRnOGM4IzgjOAMZwRnBGc4IzgjOCM4wxnBGcEZITgjOCM4wxnBGcEZwRnOCM4IznBGcEZwRnCGM4IzgjOcEZwRnC2d2GfmGw0zgzOc4QxnONt3Z//+k03koa3a/ccGDf/TquF/dbt/tGr4pw0aWnfq8Tr7qWcTeWirdv+9QcM/WzX8n273L1YN/7pBQ+tOxRnOcIYznOEMZzjDGc5whjOc4QxnOMMZznCGM5zhDGc4wxnOcIYzdZy+67oDnP28zjzXs3E2kD+7N8fMmR+k4xs5y+Sid+YNxSgMhRgPcjpTdYgvD+36a5ytNPSV13qSzpyhEIG5s8FIxBl6Js5Ckc67gTNnxmXUN3Pmj0T045fahJvHmapDgvH0fMdBhjNFw0niWsNTdha8R11g7mwYdXpMbeQYOBsvOQvyO5Nc3qbFSQxNnDmjOS95qf21zpQd4i7OuK9zpmyYvNbh6Tp7G4vh0MaZL+IaEUxSv6frnS0xC/Pfn3lTZlMugYGzUIzn4uQvhZftTN0h8mrDt2DgjtKSks40PSnGqt+pk3M2fPN6no2z4ez32ougOQbOJk7ymwT5nclBc8HlPb+zIDFaSghv2c7UHeImrzZUOtP0pHqkPs3nABtno3n/DTStdc4St+KOshLqnI0Wf1vWiPzOktWvL8Qkx3PAyiWN50OeF5UnT/scgLMtO/Mn61qrnfnCW1POdM6CRCEJTZwlz89PKsnvzF9U7Lfk19Y7C1T1E2c282dG42YwSpazSc/I2XhRz0a5nTmpq1Ne6lpnA1f97fI4C3C2FWeO5ulv/TztUPnwl+FsfpaaQ6qdBcvOXItxU/M1nH2eM1dMPCtnzqI+5bw/m8+guOqpFLWzaKh8264z38SZj7NtOOtrmK13pilnWmfRFNZoEB9y5BvMn6Umgzd2Fk2N9PI7c+WNZH8YhmF63QRnZs48V+iWrNY505Uz/fxZPLUeBn0x9k3WAyaJChRs7Kyf/AZ5nLmzZZNUR+HMwJk3GMo+HA8dK2e6cqZfD/BmazihZ7S+KWV81Nx3oVoRMHEWJmd68ziTBw+n1BKFH2cG65vRwlM82+1aOPN15SxjfTNaccpYUdWtB0Q8J9EFBvEPPNjEmZO62hzOxv3oZP1hei0XZ/mdeW7fma0vD82dhbpylrVfoz+aVoZRYOLMn67CSmTDqLz0NnH2npqLWe/M9xJVdfE1nJnPa0Q/xYGps0BbzjLGzVBMHOd9eTF7/X4NZ7pJRD5EDC3XAxY1PPWkm2M9IDWCDnFmP08b3/+YOhurB9ssZ7IsxXc4cQVVTWxk7HP031y3P12wetvAmTdKT1OYOJNtFwsaODN3Fk1sCUNnfeW+iUxn8uc09hbPA0MjZ4m5NGcDZ8uDvYmzeCMVzjZw9m7szBvpy5nOmbsYLKPF7LGNM83OtbzO3OWzNnLm4mwzZ66xM1e9JJrpbJQ4SF95xLXOfM2ezJzO+iu7kUydjXG2mbPQyJl8dBj2DJ05yYM4ds4mQr17Ip+zYHXlw9QZ92ebOFNvu89wlvk+gsZZkMIsVBs21jnT7ffO58wfrdZCU2c8b5o689Ijmm/izBfqDUHr6tk4ecbvxs6GQrcUm8eZM1JcpJGzZDXFWT5nzthL3iyFRvO0odDO0WbfnzmJ4jYwdOa9a9cR8jiTz7iLc/acnM58N/WLsriAk3Rm8X6AvygN8tlx5Jg4C5SD3lpnw9Q2/7Bn5iwYa+7NVM5WO0Qymx886L9//HnZ2XLDfqIGhif9vtN8oXJgOG6O5++TOBPNLh2ts7HImNTQO5MD1/xAgcn+s7hB9EPWP+EuO1vtkGH6LS2ds+WG3scpR+V0dNLr6N4gXmceOEbOog02w34QuCMx8Y32a/RF1qRG9nrAdF2zPzLaf9YbhGLsZh0y7UzRISlmYV/zHoqiobz3f3f7QT/e2OL3TteZm/nKbsbz5vxt9HHGcnhXs3oQ9myc9fzokwvCcGy6X2Pg+tkPzElnqg4JFv9rNNStb6p78kPoOLVPj89xyT2v4fWHofvmZ3FRNlR9pEbe/Rr+mzxmX1ea9vLzgnw3DIcr/YQzi/kzM2d5GvK5VDjDGc5whjOc4QxnOMMZznCGM5zhDGc4wxnOcIYznOEMZzjDGc5whrPdO/vcfKNhZnCGM5zhDGd77ezswjJXV1dW7b7boOH3uq/FPyHdF3+4uvrB6ojfb9DwO9t+PVJnx5EtVILjCM52mtIuuhdnOFN17zX9gLPdphj1xA39gLPd5kvUE7f0A852mzseBHD2GbmMuuIL/YCz3eaegRNnn5DreOB8wBnOdprHeOAsPeIMZzvNQ1zQijjD2Sf0cPeOXsDZTjNdS789wxnOdpqbGFrpAmc422XuStMNXNc4w9kucz3bKXiDM5zt9JlzVtEuHx5xhrPd5WwGrVsq3uEMZzvL4+3HPvv7C5zhbMdPndPh8/76DGc429HTQCn1+tB58eIRZzjbwdj5cLn8rtr5ebH4cHGGM5xtt2PudW9HXp7L3BcTeUi/1naHM5zlz12xtNHbzDHG68Njh7PPL2rX96UtvD9/e3N9gTOcZZe1h5vbbXxYw+V98QxnJLubLq6LN+cbe7u8vsMZyQVOJr75vz9fSR6H9w84I9uaF4k0PhRlCTxfvb8r3dzhjOwAXfE+PR1X+oIzsiNs1zeJ0lbEGdlZHhZzv3u8ORxnRzBJcj0fQUsPOCO7fGKdS7vGGdnlrdps9Czd4YzsMrN9R+c4IzvN2XRG9wvOyG6fB0r7+1keODuiFPd3Gg1nx5GHy2jlaTpyTmfRHm67t484I1sdMqcv7V18FLSz8/16Mxlnx+NMuirOen72wijOyHYze23vF9G/4FSavwBfOsMZ2fKsxnSi9lsE7W9mi1B79OSJs6PJl9Lsn6Sb/qt053s1v4GzIyppU2hxSdu3DyfC2fFB28fPwMLZUUH7eGGggDOyuzzMNjw+4ozsMsU9m8/A2XEm/ncx9nCzI86OLF/2cdTcY2fn3U/OtyNpOJvX2O4RN/7HHXF2bM520hBnOMPZhid2fWGT6Hps8ssNGv7KquGP3e4ff7LJnzZo+O9WDY/amd1p2XbJ1QYNv1o1/HW3+5eeTf66QcOfrBriDGc4wxnOcIYznOEMZzjDGc5whjOc4QxnOMMZznCGM5zhDGc4w5mWi9N3XXeAs5/XWblStnH2VKlUnqtmzmr1dGpGzqoNecgnY2feUIzCUIjxIKczz/VW/pYvpbr+GmcrDf1gEf+0nVWbQtTNnT21RJxm2cRZW6TzYuBMnmirLb9Bq2HmzB+J6McvtQk3jzNH/sVg6e8E4+n5joMMZ4qGk8S1hqfsrP4SdYG5M4lTdGJqraqBs86Ss3p+Z7WWeI6Krzxy08SZM5rzeheiv9ZZ8B6d1xIXd3HGfZ0zZcPktQ5P19lzRzSbNs5qQkSDbf1VNm4bOFti1s5/f1aeMpN5UZ+vzlkoxnNxQoy8bGdvYzEcrnDxZTF6CwbuKC0p6UzdsCfGi4sNTtdZ87lcKNs4a4rp4FWOoFUNnL1Wk9+knt+ZHDTn46dquNU6CxKjpYTwlu1s+Ob1vBUu7qyKeZPU8Jd0pm7YU4/Up/kcYOOsVZnfpmla65wl7uKrykqoc9Za/G05+OZ39p742feFmOR4DljhMp4PeV5UnjztcwDOtuys9rqutdpZTZTXlDOds3pikG2bOEv+7P2kkvzOfOF8DI/Jr613FqjqJ85s5s+Mxs16K1nOXgtGzjqLetbK7cxJ/exXC04eZwNX/e3yOAtwthVnVc3T3/p52vktXm5n87PUHFLtLFh25lqMm5qv4ezznFXEa9nKWXVRn3Len81nUCrqqRS1s2iofNuuM9/EmY+zbThraJitd6YpZ1pnlWiq7ik+ZKtmMH8mm71vz1k0NdLL78wV8uFjGIbhm4Mze2flitAtWa1zpitn+vmz13jCrd4QnZrJesAkUYGCjZ31k98gj7PpnFt0XA9nVs7KT005lnWaVStnunKmXw+YQpPUNLI1zqQMMfE+5jgUKwImzsLkTG8eZ/Lg4ZTaxMOZhbNo4qwTLyNVLJzVdOUsY30zWnHKWFHVrQdEBW0S/fiD+AcebOLMSdXDHM7G/UiXH60UJIZvnOV3Vq40ZCWrR9Ka5s7aunKWtV+j0Zqu3bfqJs78uJyMJLJhVF56mzh7T83zrnfme4mquvgazsznNaIf/ZOps7q2nGWMm23xWq3Gy/5KpNr9Gk4YtxkNonWnySbOBmLkGDlLj6BDnNnP0zZk81dTZx31YJvlrNaaPtrGFVQ1sZGxz9F/c93ovmy8dn0zk4s3Sk9TmDiTbRcrozgzdxZNbAlDZw3RKhs6K7dEp7x4HmgaOUvMpTkbOAuXHiJMnEW1VOBsA2cvxs6kGW050zmrLAbLckeoht31zobJPWDmztzlOREjZy7ONnNWMXZWUS+JZjprJQ7SUB5xrTNZzkaOvbN+4oHRztkYZ5s5axs5k48OzYKhs2ryIFU7ZxOh3j2Rz1mQnACzc8b92SbOmsoZtAxnme8jaJzVU5iFasPGOmeaUTOnM3+0WgtNnfG8aeqsnB7RaibOakK9IWhdPeskz/jF2NlQrBak/M6ckWJF3MhZspriLJ+zaqecvFlqG83TtoV2jjb7/qyaKG5Phs68d1lOvJ6tM2+SeNT0nJzOfDe9D845aWcW7wfUFrs05LNjq2rirK4c9NY6S47OTaXsLGfBWHNvpnK2us1fMpuTCfrvH39edrbcsJ+ogeFJv+8U5Uk9oZ85bnbm75NUXzW7dLTOOiJjUkPvTD48zA9UN9l/FtuIfshO7s89GMgOGazMfSWic7bc0BMjf1FORye9jl5+iqY9X5+qRs6i3a3NRr1eaYnXWsHEWUNkTWpkrwdM1zUbLaP9Z71BKMauk/vzNbxBvPA+cDTMwr7mPRRFQ3nv/+72g/5wJMTYP+F9QZXMV3Yznjfnb6N3MpbDu5rVg3bBxlmhJm/sOu12x3S/xsD183+OS+KF4I8hMFj8r9FQt76papgQOk59IAKf45J7XqPcaLYrz7UsLsqGqo/UyOdMSnuWx2zoquFefl6Q74bh0H3z2bdt6Wxd+FwqPi8IZzjDGc5whjOc4QxnOMMZznCGM5zhDGc4wxnOcIYznOEMZzjDGc7229nn5hsNM4MznOEMZzjba2dnF5a5urqyavfdBg2/t2r4w9XVD1YNv9c3jO4yu3+b0fA72349UmfkqLoeZ8eVYtT19zgjn+CsiDPyCT/PLzgjO81d/Gh4hjOy+2GzVMAZ2Wkuo56/wRnZab7s67CJs2PKY1zObgs4I7vMfVzOHnBGdpnrmNnlI87IDvMwXe++KOCM7JxZsYAzsrvcTJnta6/j7ChyN9uuV7rDGdlZirO9iLdnBZyRHeXids7ssYAzsiNlHzvc7/eXGc6ORtm+Pmni7ODzeH35oez8rIAzsotSdrN4Gal0vecni7MDncgoXiaUFe8KOCNbHy8fkm+3loqP+3/KODu4fLnvHpoynB3eTVkpqez84UDOG2eHdFOWeL6MStnN3cGcOs4OJg+p8bJ7/3BIJ4+zA7n1T5ey2+vHwzp/nB3GLEbyruyyeHdwV4CzA6hlxdTz5dkhXgPO9j7XpUO9KcPZ4eTs8qDHS5wdSDFb3Po/HPJ14Gyv78w+lsrPLw77SnC2z8zmG2UvLw79UnC2/8z2ftMPzg46s/n/27sCznC2s8xmzW6O4mJwtq+ZfsZU96GAM5xtO2e3H5swplsZixf3pdsznOFsqyl9vLgU92H372729HPacXb4zuL3feOHgL//sXskXYmzfbz3v32MPzj72z9M//MLznC25Ru06QrA7T9GzP5peovGvAbOtp+LeOz852/db9/2+6NZcHbgJS2G9m3G7LGAM5ztJNP1pqNihrP9rWjHxAxn+3mPNltAPyvgDGc7zPWxzGfgbP9/LvcFnOFs57dopTuc7d5Z8dwyX79+tWr3mw0a/taq4e++fv2d9ou//5ffa7/226yGWZENf2Pbr0fq7Lz7yflGw8zgDGc42+TEri9sEl2PTX65QcNfWTX8sdv94082+VO3+6PVEX/V7f7StlOP15ndadl2ydUGDb9aNfx1t/uXnk3+2u3+2uqIX7vdq0/tVJzhDGc4wxnOcIYznOEMZzjDGc5whjOc4QxnOMMZznCGM5zhDGcn4Mzpu647wNnP66xcKdt0yVOlUnmumjmr1dOpGTmrNuQhn4ydeUMxCkMhxoOczlQdUpOHrtTWOFtpWFNe60k6qzaFqJs7e2qJOM2yibO2SOfFwJk80VZbfoNWw8yZPxKuF2sTbh5nqg6pd6bn26lnOFM0fE1ca/uUndVfoi4wd9aMOj2m1qoaOOssOavnd1ZrieeoZMgjN02cOaM5r3ch+mudKTuksjjjhs6ZsmHyWpun6+y5I5pNG2c1IaIhov6a+j1d72yJWTv//Vl5ykzmRX2+OmehGM/FCTHysp2pO0Rebfu5/lRppSUlnWl6UnRUv1Mn56z5XC6UbZw1Z7/X5Qha1cDZazX5Ter5nclBcz48qYZbrbMgMVrKkfMt25m6QyrJq20rnWl6UlR4DkjUGGNnrXn/PWla65wl7uKrykqoc9Za/G1ZI/I7k4NlMP9zX4hJjueAlUvqzIe8clSeytrnAJxt2VntdV1rtbOaKK8pZzpn9UQhaZs4EwlnvvwPz9xZbVGxn5NfW++sPh/rcWZXz1Kt84+b9VaynL0WjJx1FvWslduZk3SWQpff2VMlcdKGzuo424qzqubpb/08bVM0zJzNz1JzSLWzYNmZazFuar6Gs89zVhGvZStn1UV9ynl/Np9BqainUtTOoqHybbvOaibOajjbhrOGhtl6Z5pypnUWTWG1nuJDtmoG82ey2fv2nMla2irkd1aRN5KNZrvdTq+b4MzMWbkidEtW65zpypl+/iyeWm/XG6KjZKZzNpGt/MQgupmzhkg8QeZxVpktm6Q6CmcGzspPTdmHnWbVypmunOnXA8qzNZy2RrbGWV82mXgfcxyKFQETZ23RKhs5E+K1PaWWKPw4y+8smjjrxLPdFQtnNV05y1jfjFacMlZUdesBUUGbRI8CQTiye95MDZuJq83hrNOITrbWTK/l4iy/s3KlUZ2tLzfNnbV15Sxrv0ajNa0MrbqJMz/SJUYS2dCVf+ht4uwlNRez3lmtvBhvE1/Dmfm8RvSjfzJ1VteWs4xxsy1eq9WX5cXstc56Thi3GQ2idafJJs6e0k+6OdYDUiNoE2f287TRb+qrqbOOerDNclZrTe9w4gqqmtjI2Ofov7ludF82Xru+mdkh5VZ6msLEmWy7WNDAmcVUT1TQDJ01knfT+ZzJn1OnvHgeaBo5S8ylORs4Wx7sTZzFG6lwtoGzF2Nn0oy2nOmcVRaDZbSY3bFxJofNYc/eWWX5rI2cVXC2mbOKsbOKekk001krcZCG8ohrnclyNnLsnTVWdiOZOuvgbDNnbSNn8tGhWTB0Vk0epGrnbKK8O8vrrL668mHqjPuzTZw1lTNoGc4y30fQOKunMAvVho11zjSjZk5ntdbqs4epM543TZ2V0yNazcRZTag3BK2rZ53kGb8YOxsulgUsnFVbios0ciafXp5xZuas2iknb5baRvO0baGdo82+P6smituToTPvXVYzr2frTD7jLs65XM3prFZJ/aIsLuAknVm8H1Bb3KvIZ8dW1cRZXTnorXWWHJ2bStlZzoKx5t5M5Wy1QySz+cHrjZePPy87W27YSNTA9km/7xTlST2hn9klnfn7JNVXzS4drbOOyJjU0DuTA9f8QHWT/WexslAWMyf35x6sdkgz/ZaWztlyw/LHKZdfRHLK8ASdlZ+iac/Xp6qRs2h3a7NRr1da4rVWMHHWEFmTGoXM9YDpumajZbT/rDcIxdh1cn++hqJDUszaDc17KIqG8t7/pdKoN+KNLbXC6TqrZL6ym9El87fROxnL4eoXpTTve651VqjJoafTbndM92sMXD//57ioOqS++F+tpm59U92TH0I7qX16fI5L7nmNcqPZrjzXsrgoG6o+UiOfMyntWR6zoauGe/l5QbVKu91c6SecWcyfmTnL05DPpcIZznCGM5zhDGc4wxnOcIYznOEMZzjDGc5whjOc4QxnOMMZznCGM5zt3tntuU2iQ9vkFxs0/Ferhn/odv/3zzb5v273D1ZH/Ldu9xe2nXq8zj4332iYGZzhDGfWObuwzNXVlVW77zZo+L1Vwx+urn6wavj9Bg2/s+3XI3VGjio4IzgjOMMZwRnBGcEZzgjOCM5wRnBGcEZwhjOCM4IznBGcEZwRnOGM4IzgjOAMZwRnBGc4IzgjOCM4wxnBGcEZzgjOCM4IznBGcEZwRgjOCM4IznBGcEZwRnCGM4IzgjOcEZwRnBGc4YzgjOAMZwRnBGcEZzgjOCM4IzjDGcEZwRnOCM4IzgjOcEZwRnCGM4IzgjOCM5wRnBGcEYIzgjOCM5wRnBGcEZzhjOCM4AxnBGcEZwRnOCM4IzjDGcEZwRnBGc4IzgjOCMEZwRnBGc4IzgjOCM5wRnBGcIYzgjOCM4IznBGcEZzhjOCM4IzgDGcEZwRnBGc4IzgjOMMZwRnBGcEZzgjOCM5wRnBGcEZwhjOCM4IzQnBGcEZwhjOCM4IzgjOcEZwRnOGM4IzgjOAMZwRnBGc4Izgjx+WMkKXgjOCM4AxnBGdk7539P9mxf4EVyOWpAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE5LTA1LTI4VDIyOjUzOjQxKzAyOjAw3tE0XwAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxOS0wNS0yOFQyMjo1Mzo0MSswMjowMK+MjOMAAAAUdEVYdHBkZjpWZXJzaW9uAFBERi0xLjUgBVwLOQAAAABJRU5ErkJggg==
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from binary_search import binary_search
+    from random import randrange
+
+
+    def reference(keys, query):
+        assert all(keys[i] < keys[i + 1] for i in range(len(keys) - 1))
+        assert 1 <= len(keys) <= 10 ** 4
+
+        left, right = 0, len(keys)
+        while left + 1 < right:
+            ave = (left + right) // 2
+            if keys[ave] <= query:
+                left = ave
+            else:
+                right = ave
+        if keys[left] != query:
+            return -1
+        else:
+            return left
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("binary_search_unit_tests.py")
+
+        all_tests_passed = True
+        for _ in range(20):
+            keys = set()
+            for i in range(100):
+                x = randrange(239239) + 1
+                while x in keys:
+                    x = randrange(239239) + 1
+                keys.add(x)
+            keys = sorted(list(keys))
+
+            for key in keys:
+                for query in (key, key + 1):
+                    if binary_search(keys, query) != reference(keys, query):
+                        all_tests_passed = False
+                        failed("Wrong answer for keys={}, query={}".format(keys, query))
+                        break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-3-divide-and-conquer/discussions
+status: Unchecked
+record: -1

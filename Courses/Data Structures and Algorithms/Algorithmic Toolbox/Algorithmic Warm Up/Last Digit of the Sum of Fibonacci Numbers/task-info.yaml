@@ -1,0 +1,112 @@
+type: edu
+files:
+- name: last_digit_of_the_sum_of_fibonacci_numbers.py
+  visible: true
+  placeholders:
+  - offset: 469
+    length: 121
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 470
+    initialized_from_dependency: false
+    selected: true
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def last_digit_of_the_sum_of_fibonacci_numbers_naive(n):
+        assert 0 <= n <= 10 ** 18
+
+        if n <= 1:
+            return n
+
+        fibonacci_numbers = [0] * (n + 1)
+        fibonacci_numbers[0] = 0
+        fibonacci_numbers[1] = 1
+        for i in range(2, n + 1):
+            fibonacci_numbers[i] = fibonacci_numbers[i - 2] + fibonacci_numbers[i - 1]
+
+        return sum(fibonacci_numbers) % 10
+
+
+    def last_digit_of_the_sum_of_fibonacci_numbers(n):
+        assert 0 <= n <= 10 ** 18
+
+        type here
+
+
+    if __name__ == '__main__':
+        input_n = int(input())
+        print(last_digit_of_the_sum_of_fibonacci_numbers(input_n))
+  learner_created: false
+- name: last_digit_of_the_sum_of_fibonacci_numbers_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 513
+    length: 5
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 513
+    initialized_from_dependency: false
+    selected: true
+    status: Unchecked
+  text: |
+    import unittest
+    from last_digit_of_the_sum_of_fibonacci_numbers import last_digit_of_the_sum_of_fibonacci_numbers, last_digit_of_the_sum_of_fibonacci_numbers_naive
+
+
+    class TestLastDigitOfTheSumOfFibonacciNumbers(unittest.TestCase):
+        def test_small(self):
+            for n in range(20):
+                self.assertEqual(last_digit_of_the_sum_of_fibonacci_numbers(n),
+                                 last_digit_of_the_sum_of_fibonacci_numbers_naive(n))
+
+        def test_large(self):
+            for (n, last_digit) in [(100, 5), type here]:
+                self.assertEqual(last_digit_of_the_sum_of_fibonacci_numbers(n), last_digit)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: logo.png
+  visible: false
+  text: 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
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from last_digit_of_the_sum_of_fibonacci_numbers import last_digit_of_the_sum_of_fibonacci_numbers
+
+
+    def fibonacci_sum_last_digit(n):
+        n = (n + 2) % 60
+
+        prev, cur = 0, 1
+        for _ in range(n):
+            prev, cur = cur, (prev + cur) % 10
+
+        return (prev + 9) % 10
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("last_digit_of_the_sum_of_fibonacci_numbers_unit_tests.py")
+
+        all_tests_passed = True
+        for n in [2, 3, 239, 240, 1000, 9999, 10 ** 17]:
+            if last_digit_of_the_sum_of_fibonacci_numbers(n) != fibonacci_sum_last_digit(n):
+                all_tests_passed = False
+                failed("Wrong answer for n={}".format(n))
+                break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/b66y2/programming-assignment-1-introduction/discussions
+status: Unchecked
+record: -1

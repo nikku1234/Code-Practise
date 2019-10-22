@@ -1,0 +1,104 @@
+type: edu
+files:
+- name: logo.png
+  visible: false
+  text: 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
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from partition_souvenirs import partition3
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("partition_souvenirs_unit_tests.py")
+
+        all_tests_passed = True
+
+        for values, answer in (
+            ((20, ), 0),
+            ((7, 7, 7), 1),
+            ((3, 3, 3), 1),
+            ((3, 3, 3, 3), 0),
+            ((1, 2, 3, 4, 5, 5, 7, 7, 8, 10, 12, 19, 25), 1),
+            ([1]*10, 0),
+            ([1]*12, 1),
+            ([30] * 20, 0),
+            ([30] * 18, 1),
+        ):
+            if partition3(values) != answer:
+                all_tests_passed = False
+                failed("Wrong answer for values={}".format(values))
+                break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+- name: partition_souvenirs.py
+  visible: true
+  placeholders:
+  - offset: 173
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 173
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+    from itertools import product
+    from sys import stdin
+
+
+    def partition3(values):
+        assert 1 <= len(values) <= 20
+        assert all(1 <= v <= 30 for v in values)
+
+        type here
+
+
+    if __name__ == '__main__':
+        input_n, *input_values = list(map(int, stdin.read().split()))
+        assert input_n == len(input_values)
+        print(partition3(input_values))
+  learner_created: false
+- name: partition_souvenirs_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 282
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 282
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from partition_souvenirs import partition3
+
+
+    class PartitionSouvenirs(unittest.TestCase):
+        def test(self):
+            for values, answer in (
+                ((20, ), 0),
+                ((7, 7, 7), 1),
+                ((3, 3, 3), 1),
+                ((3, 3, 3, 3), 0),
+                type here
+            ):
+                self.assertEqual(partition3(values), answer)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/ekN4T/programming-assignment-4-dynamic-programming/discussions
+status: Unchecked
+record: -1

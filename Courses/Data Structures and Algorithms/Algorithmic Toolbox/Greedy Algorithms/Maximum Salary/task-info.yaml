@@ -1,0 +1,129 @@
+type: edu
+files:
+- name: logo.png
+  visible: false
+  text: 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
+  learner_created: false
+- name: maximum_salary_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 253
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 253
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from random import randint
+    from maximum_salary import largest_number_naive, largest_number
+
+
+    class TestLargestNumber(unittest.TestCase):
+        def test_small(self):
+            for numbers in [
+                [1],
+                [1, 2],
+                type here
+                [1, 12],
+                [2, 12],
+                [2, 21],
+                [2, 21, 23, 211, 213, 231, 232]
+            ]:
+                self.assertEqual(largest_number(numbers),
+                                 largest_number_naive(numbers))
+
+        def test_random(self):
+            for n in range(2, 7):
+                for max_value in [10, 20, 100, 1000]:
+                    for _ in range(10):
+                        numbers = [randint(1, max_value) for _ in range(n)]
+                        self.assertEqual(largest_number(numbers),
+                                         largest_number_naive(numbers))
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from maximum_salary import largest_number
+
+
+    def reference(numbers):
+        numbers = list(map(str, numbers))
+
+        for _ in numbers:
+            for i in range(len(numbers) - 1):
+                if numbers[i] + numbers[i + 1] < numbers[i + 1] + numbers[i]:
+                    t = numbers[i]
+                    numbers[i] = numbers[i + 1]
+                    numbers[i + 1] = t
+
+        return int("".join(numbers))
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("maximum_salary_unit_tests.py")
+
+        all_tests_passed = True
+        for numbers in [
+            [2, 21, 23, 211, 213, 231, 232],
+            [56, 5, 6, 556, 566, 666, 665, 656]
+        ]:
+            if reference(numbers) != largest_number(numbers):
+                all_tests_passed = False
+                failed("Wrong answer for n={}".format(numbers))
+                break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+- name: maximum_salary.py
+  visible: true
+  placeholders:
+  - offset: 298
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 298
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+    from itertools import permutations
+
+
+    def largest_number_naive(numbers):
+        numbers = list(map(str, numbers))
+
+        largest = 0
+
+        for permutation in permutations(numbers):
+            largest = max(largest, int("".join(permutation)))
+
+        return largest
+
+
+    def largest_number(numbers):
+        type here
+
+
+    if __name__ == '__main__':
+        n = int(input())
+        input_numbers = input().split()
+        assert len(input_numbers) == n
+        print(largest_number(input_numbers))
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/discussions
+status: Unchecked
+record: -1

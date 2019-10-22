@@ -1,0 +1,129 @@
+type: edu
+files:
+- name: logo.png
+  visible: false
+  text: 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
+  learner_created: false
+- name: majority_element.py
+  visible: true
+  placeholders:
+  - offset: 268
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 268
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def majority_element_naive(elements):
+        assert len(elements) <= 10 ** 5
+        for e in elements:
+            if elements.count(e) > len(elements) / 2:
+                return 1
+
+        return 0
+
+
+    def majority_element(elements):
+        assert len(elements) <= 10 ** 5
+        type here
+
+
+    if __name__ == '__main__':
+        input_n = int(input())
+        input_elements = list(map(int, input().split()))
+        assert len(input_elements) == input_n
+        print(majority_element(input_elements))
+  learner_created: false
+- name: majority_element_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 296
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 296
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from majority_element import majority_element, majority_element_naive
+
+
+    class TestMajorityElement(unittest.TestCase):
+        def test_small(self):
+            for elements in [
+                [7, 2, 7],
+                [7, 8, 9],
+                [2, 3, 2, 3],
+                [1, 2, 3, 4],
+                type here
+            ]:
+                self.assertEqual(
+                    majority_element(list(elements)),
+                    majority_element_naive(elements)
+                )
+
+        def test_large(self):
+            for (elements, answer) in [
+                ([0] * 5000 + [1] * 5000, 0)
+            ]:
+                self.assertEqual(
+                    majority_element(elements),
+                    answer
+                )
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from majority_element import majority_element
+
+
+    def reference(elements):
+        table = {}
+        for e in elements:
+            if e in table:
+                table[e] += 1
+            else:
+                table[e] = 1
+
+        for e in table:
+            if table[e] > len(elements) / 2:
+                return 1
+
+        return 0
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("majority_element_unit_tests.py")
+
+        all_tests_passed = True
+        for elements, answer in [
+            ([1, 1, 2], 1),
+            ([1, 2], 0),
+            ([7, 8, 7], 1),
+        ]:
+            if majority_element(elements) != answer:
+                all_tests_passed = False
+                failed("Wrong answer for elements={}".format(elements))
+                break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/w9YDz/programming-assignment-3-divide-and-conquer/discussions
+status: Unchecked
+record: -1

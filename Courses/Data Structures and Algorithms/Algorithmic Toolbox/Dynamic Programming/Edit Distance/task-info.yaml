@@ -1,0 +1,109 @@
+type: edu
+files:
+- name: edit_distance.py
+  visible: true
+  placeholders:
+  - offset: 64
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 64
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def edit_distance(first_string, second_string):
+        type here
+
+
+    if __name__ == "__main__":
+        print(edit_distance(input(), input()))
+  learner_created: false
+- name: edit_distance_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 364
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 364
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from edit_distance import edit_distance
+
+
+    class EditDistance(unittest.TestCase):
+        def test(self):
+            for first_string, second_string, answer in (
+                ("ab", "ab", 0),
+                ("short", "ports", 3),
+                ("editing", "distance", 5),
+                ("a" * 100, "a" * 100, 0),
+                ("ab" * 50, "ba" * 50, 2),
+                type here
+            ):
+                self.assertEqual(edit_distance(first_string, second_string), answer)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: logo.png
+  visible: false
+  text: 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
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from edit_distance import edit_distance
+
+
+    def reference(s, t):
+        sn = len(s)
+        tn = len(t)
+
+        f = [[10**9] * (tn + 2) for _ in range(sn + 2)]
+        f[0][0] = 0
+
+        def relax(p, q, x):
+            f[p][q] = min(f[p][q], x)
+
+        for i in range(sn + 1):
+            for j in range(tn + 1):
+                if i < sn and j < tn:
+                    relax(i + 1, j + 1, f[i][j] + (1 if s[i] != t[j] else 0))
+                relax(i + 1, j, f[i][j] + 1)
+                relax(i, j + 1, f[i][j] + 1)
+        return f[sn][tn]
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("edit_distance_unit_tests.py")
+
+        all_tests_passed = True
+
+        for first, second in (
+            ("abacabadabacabaeabacab", "aeabacabad"),
+
+        ):
+            if edit_distance(first, second) != reference(first, second):
+                all_tests_passed = False
+                failed("Wrong answer for {} and {}".format(first, second))
+                break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/ekN4T/programming-assignment-4-dynamic-programming/discussions
+status: Unchecked
+record: -1

@@ -1,0 +1,106 @@
+type: edu
+files:
+- name: collecting_signatures.py
+  visible: true
+  placeholders:
+  - offset: 158
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 158
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+    from collections import namedtuple
+    from sys import stdin
+
+    Segment = namedtuple('Segment', 'start end')
+
+
+    def compute_optimal_points(segments):
+        type here
+
+
+    if __name__ == '__main__':
+        n, *data = map(int, stdin.read().split())
+        input_segments = list(map(lambda x: Segment(x[0], x[1]), zip(data[::2], data[1::2])))
+        assert n == len(input_segments)
+        output_points = compute_optimal_points(input_segments)
+        print(len(output_points))
+        print(" ".join(map(str, output_points)))
+  learner_created: false
+- name: collecting_signatures_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 342
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 342
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from collecting_signatures import compute_optimal_points, Segment
+
+
+    class CollectingSignatures(unittest.TestCase):
+        def test(self):
+            for (segments, answer) in [
+                ([Segment(1, 3), Segment(2, 5), Segment(3, 6)], 1),
+                ([Segment(4, 7), Segment(1, 3), Segment(2, 5), Segment(5, 6)], 2),
+                type here
+            ]:
+                self.assertEqual(len(compute_optimal_points(segments)), answer)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: logo.png
+  visible: false
+  text: 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
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from collecting_signatures import compute_optimal_points, Segment
+
+
+    def reference(segments):
+        points = []
+        segments = sorted(segments, key=lambda x: x.end)
+        limit = -1
+        for segment in segments:
+            if limit < segment.start:
+                limit = segment.end
+                points.append(segment.end)
+        return points
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("collecting_signatures_unit_tests.py")
+
+        all_tests_passed = True
+        for segments in [
+            [Segment(48, 90), Segment(1, 60), Segment(49, 51), Segment(18, 80)]
+        ]:
+            if reference(segments) != compute_optimal_points(segments):
+                all_tests_passed = False
+                failed("Wrong answer for segments: {}".format(segments))
+                break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/kAiGl/programming-assignment-2-greedy-algorithms/discussions
+status: Unchecked
+record: -1

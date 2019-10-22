@@ -1,0 +1,117 @@
+type: edu
+files:
+- name: lcs2.py
+  visible: true
+  placeholders:
+  - offset: 137
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 137
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def lcs2(first_sequence, second_sequence):
+        assert len(first_sequence) <= 100
+        assert len(second_sequence) <= 100
+
+        type here
+
+
+    if __name__ == '__main__':
+        n = int(input())
+        a = list(map(int, input().split()))
+        assert len(a) == n
+
+        m = int(input())
+        b = list(map(int, input().split()))
+        assert len(b) == m
+
+        print(lcs2(a, b))
+  learner_created: false
+- name: logo.png
+  visible: false
+  text: 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
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from lcs2 import lcs2
+
+
+    def reference(a, b):
+        n, m = len(a), len(b)
+        t = [[0] * (m + 1) for _ in range(n + 1)]
+
+        for i in range(1, n + 1):
+            for j in range(1, m + 1):
+                if a[i - 1] == b[j - 1]:
+                    t[i][j] = max(t[i - 1][j - 1] + 1, t[i][j - 1], t[i - 1][j])
+                else:
+                    t[i][j] = max(t[i - 1][j], t[i][j - 1])
+
+        return t[n][m]
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("lcs2_unit_tests.py")
+
+        all_tests_passed = True
+
+        for first, second in (
+            ([1, 2] * 50, [2, 1] * 50),
+            ([0] * 10, [i % 3 for i in range(10)]),
+        ):
+            if lcs2(first, second) != reference(first, second):
+                all_tests_passed = False
+                failed("Wrong answer for {} and {}".format(first, second))
+                break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+- name: lcs2_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 426
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 426
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from lcs2 import lcs2
+
+
+    class LCS2(unittest.TestCase):
+        def test(self):
+            for first_sequence, second_sequence, answer in (
+                ((1, 2), (2, 1), 1),
+                ((1, 2), (3, 4), 0),
+                ([17] * 50, [17] * 25, 25),
+                ([1] * 100, [1] * 100, 100),
+                ((2, 7, 5), (2, 5), 2),
+                ((7, ), (1, 2, 3, 4), 0),
+                ((2, 7, 8, 3), (5, 2, 8, 7), 2),
+                type here
+            ):
+                self.assertEqual(lcs2(first_sequence, second_sequence), answer)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/ekN4T/programming-assignment-4-dynamic-programming/discussions
+status: Unchecked
+record: -1

@@ -1,0 +1,99 @@
+type: edu
+files:
+- name: logo.png
+  visible: false
+  text: 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
+  learner_created: false
+- name: money_change_again.py
+  visible: true
+  placeholders:
+  - offset: 365
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 365
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    # python3
+
+
+    def change_naive(money):
+        min_coins = float("inf")
+
+        for num1 in range(money + 1):
+            for num3 in range(money // 3 + 1):
+                for num4 in range(money // 4 + 1):
+                    if 1 * num1 + 3 * num3 + 4 * num4 == money:
+                        min_coins = min(min_coins, num1 + num3 + num4)
+
+        return min_coins
+
+
+    def change(money):
+        type here
+
+
+    if __name__ == '__main__':
+        amount = int(input())
+        print(change(amount))
+  learner_created: false
+- name: money_change_again_unit_tests.py
+  visible: true
+  placeholders:
+  - offset: 318
+    length: 9
+    placeholder_text: type here
+    initial_state:
+      length: 9
+      offset: 318
+    initialized_from_dependency: false
+    selected: false
+    status: Unchecked
+  text: |
+    import unittest
+    from money_change_again import change, change_naive
+
+
+    class MoneyChangeAgain(unittest.TestCase):
+        def test_small(self):
+            for money in range(1, 40):
+                self.assertEqual(change(money), change_naive(money))
+
+        def test_large(self):
+            for money, answer in ((200, 50), (239, 60), type here):
+                self.assertEqual(change(money), answer)
+
+
+    if __name__ == '__main__':
+        unittest.main()
+  learner_created: false
+- name: tests.py
+  visible: false
+  text: |
+    from test_helper import run_common_tests, failed, passed, check_tests_pass
+    from money_change_again import change, change_naive
+    from random import randint
+
+
+    if __name__ == '__main__':
+        run_common_tests()
+        check_tests_pass("money_change_again_unit_tests.py")
+
+        all_tests_passed = True
+
+        for _ in range(20):
+            money = randint(1, 100)
+            if change_naive(money) != change(money):
+                all_tests_passed = False
+                failed("Wrong answer for money={}".format(money))
+                break
+
+        if all_tests_passed:
+            passed()
+  learner_created: false
+feedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/ekN4T/programming-assignment-4-dynamic-programming/discussions
+status: Unchecked
+record: -1
