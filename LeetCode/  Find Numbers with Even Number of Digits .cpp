@@ -1,7 +1,7 @@
-#Find Numbers with Even Number of Digits
+//Find Numbers with Even Number of Digits
 
 class Solution {
-    
+
     int count(int n)
     {
         int length =0;
@@ -10,7 +10,7 @@ class Solution {
             n = n/10;
             length++;
         }
-        return length;   
+        return length;
     }
 public:
     int findNumbers(vector<int>& nums) {
@@ -19,14 +19,14 @@ public:
         {
           if(count(nums[i])%2==0)
               result++;
-              
+
         }
         return result;
-        
+
     }
 };
 
-#Alternative Solution
+//Alternative Solution
 class Solution {
 public:
     int findNumbers(vector<int>& nums) {
