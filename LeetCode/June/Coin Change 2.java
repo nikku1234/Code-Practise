@@ -10,7 +10,6 @@ class Solution {
             for(int i=1;i<combinations.length;i++){
 
                 if(i>=coin){
-
                     combinations[i] = combinations[i] + combinations[i-coin];
 
                 }
