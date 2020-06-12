@@ -8,6 +8,6 @@ class Solution:
         nums.sort()
         ret = [[]]
         for n in nums:
-            print(ret)
+            #print(ret)
             ret += [r + [n] for r in ret]
         return ret
