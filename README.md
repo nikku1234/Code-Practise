@@ -6,3 +6,5 @@ Improving the coding skills
 [LeetCode](https://github.com/nikku1234/Code-Practise/tree/master/LeetCode)
 
 [LintCode](https://github.com/nikku1234/Code-Practise/tree/master/LintCode)
+
+[CodeChef](https://github.com/nikku1234/Code-Practise/tree/master/CodeChef)
