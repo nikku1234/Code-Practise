@@ -7,6 +7,6 @@ Improving the coding skills
 
 [LintCode](https://github.com/nikku1234/Code-Practise/tree/master/LintCode)
 
-[Hackerrank New Account]https://github.com/nikku1234/Code-Practise/tree/master/HackerRank%20New
+[Hackerrank New Account](https://github.com/nikku1234/Code-Practise/tree/master/HackerRank%20New)
 
 [CodeChef](https://github.com/nikku1234/Code-Practise/tree/master/CodeChef)
