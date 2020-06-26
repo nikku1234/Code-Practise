@@ -17,7 +17,7 @@ def max_pairwise_product_naive(numbers):
 def max_pairwise_product(numbers):
     assert len(numbers) >= 2
     assert all(0 <= x <= 2 * 10 ** 5 for x in numbers)
-    # type here
+    type here
 
 
 if __name__ == '__main__':
@@ -25,6 +25,3 @@ if __name__ == '__main__':
     input_numbers = list(map(int, input().split()))
     assert len(input_numbers) == n
     print(max_pairwise_product(input_numbers))
-    n = 10
-    A = [0]*n
-    print(max_pairwise_product_naive(A))
