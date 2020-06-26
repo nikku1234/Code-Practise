@@ -1,0 +1,76 @@
+Index: Programming Challenges/Maximum Pairwise Product/maximum_pairwise_product.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+># python3\n\n\ndef max_pairwise_product_naive(numbers):\n    assert len(numbers) >= 2\n    assert all(0 <= x <= 2 * 10 ** 5 for x in numbers)\n\n    product = 0\n\n    for i in range(len(numbers)):\n        for j in range(i + 1, len(numbers)):\n            product = max(product, numbers[i] * numbers[j])\n\n    return product\n\n\ndef max_pairwise_product(numbers):\n    assert len(numbers) >= 2\n    assert all(0 <= x <= 2 * 10 ** 5 for x in numbers)\n    max_index1 = -1\n    for i in range(n):\n        if max_index1 == -1 or numbers[i] > numbers[max_index1]:\n            max_index1 = i\n\n    max_index2 = -1\n    for i in range(n):\n        if i != max_index1 and (max_index2 == -1 or numbers[i] > numbers[max_index2]):\n            max_index2 = i\n\n    return numbers[max_index1] * numbers[max_index2]\n\n\n\nif __name__ == '__main__':\n    n = int(input())\n    input_numbers = list(map(int, input().split()))\n    assert len(input_numbers) == n\n    print(max_pairwise_product(input_numbers))\n    # n = 10\n    # A = [0] * n\n    # print(max_pairwise_product_naive(A))\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Programming Challenges/Maximum Pairwise Product/maximum_pairwise_product.py	(revision 3078d0b9c797b1e56561bbb885a780f1426bb90e)
++++ Programming Challenges/Maximum Pairwise Product/maximum_pairwise_product.py	(date 1593187597317)
+@@ -18,12 +18,12 @@
+     assert len(numbers) >= 2
+     assert all(0 <= x <= 2 * 10 ** 5 for x in numbers)
+     max_index1 = -1
+-    for i in range(n):
++    for i in range(len(numbers)):
+         if max_index1 == -1 or numbers[i] > numbers[max_index1]:
+             max_index1 = i
+ 
+     max_index2 = -1
+-    for i in range(n):
++    for i in range(len(numbers)):
+         if i != max_index1 and (max_index2 == -1 or numbers[i] > numbers[max_index2]):
+             max_index2 = i
+ 
+Index: Programming Challenges/Maximum Pairwise Product/maximum_pairwise_product_unit_tests.py
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>import unittest\nfrom random import randint\nfrom maximum_pairwise_product import max_pairwise_product_naive, max_pairwise_product\n\nclass TestMaxPairwiseProduct(unittest.TestCase):\n    def test_small(self):\n        self.assertEqual(max_pairwise_product([1, 2, 3]), 6)\n        self.assertEqual(max_pairwise_product([9, 3, 2]), 27)\n        self.assertEqual(max_pairwise_product([7, 3, 7, 2]), 49)\n        type here\n\n\n    def test_stress(self):\n        number_of_iterations = 10\n        array_size = 100\n        max_number = 2 * 10**5\n\n        for _ in range(number_of_iterations):\n            numbers = [randint(0, max_number) for _ in range(array_size)]\n            self.assertEqual(max_pairwise_product(list(numbers)), max_pairwise_product_naive(numbers))\n\n\n    def test_large(self):\n        self.assertEqual(max_pairwise_product([4] * (2 * 10**5)), 16)\n        self.assertEqual(max_pairwise_product([x for x in range(10**5)]), (10**5 - 1) * (10**5 - 2))\n        self.assertEqual(max_pairwise_product([1] * (2 * 10**5)), 1)\n\n\nif __name__ == '__main__':\n    unittest.main()\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Programming Challenges/Maximum Pairwise Product/maximum_pairwise_product_unit_tests.py	(revision 3078d0b9c797b1e56561bbb885a780f1426bb90e)
++++ Programming Challenges/Maximum Pairwise Product/maximum_pairwise_product_unit_tests.py	(date 1593187555407)
+@@ -7,7 +7,7 @@
+         self.assertEqual(max_pairwise_product([1, 2, 3]), 6)
+         self.assertEqual(max_pairwise_product([9, 3, 2]), 27)
+         self.assertEqual(max_pairwise_product([7, 3, 7, 2]), 49)
+-        type here
++        self.assertEqual(max_pairwise_product([9, 3, 10, 2]), 90)
+ 
+ 
+     def test_stress(self):
+Index: Programming Challenges/Maximum Pairwise Product/task-info.yaml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>type: edu\nfiles:\n- name: logo.png\n  visible: false\n  learner_created: false\n- name: maximum_pairwise_product.py\n  visible: true\n  placeholders:\n  - offset: 435\n    length: 347\n    placeholder_text: type here\n    initial_state:\n      length: 9\n      offset: 439\n    initialized_from_dependency: false\n    selected: true\n    status: Unchecked\n  text: |\n    # python3\n\n\n    def max_pairwise_product_naive(numbers):\n        assert len(numbers) >= 2\n        assert all(0 <= x <= 2 * 10 ** 5 for x in numbers)\n\n        product = 0\n\n        for i in range(len(numbers)):\n            for j in range(i + 1, len(numbers)):\n                product = max(product, numbers[i] * numbers[j])\n\n        return product\n\n\n    def max_pairwise_product(numbers):\n        assert len(numbers) >= 2\n        assert all(0 <= x <= 2 * 10 ** 5 for x in numbers)\n        type here\n\n\n    if __name__ == '__main__':\n        n = int(input())\n        input_numbers = list(map(int, input().split()))\n        assert len(input_numbers) == n\n        print(max_pairwise_product(input_numbers))\n  learner_created: false\n- name: maximum_pairwise_product_unit_tests.py\n  visible: true\n  placeholders:\n  - offset: 401\n    length: 9\n    placeholder_text: type here\n    initial_state:\n      length: 9\n      offset: 401\n    initialized_from_dependency: false\n    selected: false\n    status: Unchecked\n  text: |\n    import unittest\n    from random import randint\n    from maximum_pairwise_product import max_pairwise_product_naive, max_pairwise_product\n\n    class TestMaxPairwiseProduct(unittest.TestCase):\n        def test_small(self):\n            self.assertEqual(max_pairwise_product([1, 2, 3]), 6)\n            self.assertEqual(max_pairwise_product([9, 3, 2]), 27)\n            self.assertEqual(max_pairwise_product([7, 3, 7, 2]), 49)\n            type here\n\n\n        def test_stress(self):\n            number_of_iterations = 10\n            array_size = 100\n            max_number = 2 * 10**5\n\n            for _ in range(number_of_iterations):\n                numbers = [randint(0, max_number) for _ in range(array_size)]\n                self.assertEqual(max_pairwise_product(list(numbers)), max_pairwise_product_naive(numbers))\n\n\n        def test_large(self):\n            self.assertEqual(max_pairwise_product([4] * (2 * 10**5)), 16)\n            self.assertEqual(max_pairwise_product([x for x in range(10**5)]), (10**5 - 1) * (10**5 - 2))\n            self.assertEqual(max_pairwise_product([1] * (2 * 10**5)), 1)\n\n\n    if __name__ == '__main__':\n        unittest.main()\n  learner_created: false\n- name: tests.py\n  visible: false\n  text: |\n    from test_helper import run_common_tests, failed, passed, check_tests_pass\n    from maximum_pairwise_product import max_pairwise_product\n\n    if __name__ == '__main__':\n        run_common_tests()\n        check_tests_pass(\"maximum_pairwise_product_unit_tests.py\")\n\n        all_tests_passed = True\n        tests = [\n            ([1, 2], 2),\n            ([2, 1], 2),\n            ([3, 5], 15),\n            ([5, 3], 15),\n            ([7, 7], 49),\n            ([5, 1, 5], 25),\n            ([1, 5, 5], 25),\n            ([i + 1 for i in range(10**5)], (10**5 - 1) * (10 ** 5)),\n        ]\n\n        for array, answer in tests:\n            if max_pairwise_product(array) != answer:\n                all_tests_passed = False\n                failed(\"Wrong answer for A={}\".format(array))\n                break\n\n        if all_tests_passed:\n            passed()\n  learner_created: false\nfeedback_link: https://www.coursera.org/learn/algorithmic-toolbox/programming/d5xfz/maximum-pairwise-product/discussions\nstatus: Unchecked\nrecord: -1\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Programming Challenges/Maximum Pairwise Product/task-info.yaml	(revision 3078d0b9c797b1e56561bbb885a780f1426bb90e)
++++ Programming Challenges/Maximum Pairwise Product/task-info.yaml	(date 1593187606255)
+@@ -7,7 +7,7 @@
+   visible: true
+   placeholders:
+   - offset: 435
+-    length: 347
++    length: 369
+     placeholder_text: type here
+     initial_state:
+       length: 9
+@@ -48,13 +48,13 @@
+   visible: true
+   placeholders:
+   - offset: 401
+-    length: 9
++    length: 57
+     placeholder_text: type here
+     initial_state:
+       length: 9
+       offset: 401
+     initialized_from_dependency: false
+-    selected: false
++    selected: true
+     status: Unchecked
+   text: |
+     import unittest

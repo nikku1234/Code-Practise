@@ -7,11 +7,11 @@ files:
   visible: true
   placeholders:
   - offset: 435
-    length: 347
+    length: 325
     placeholder_text: type here
     initial_state:
-      length: 9
-      offset: 439
+      length: 347
+      offset: 435
     initialized_from_dependency: false
     selected: true
     status: Unchecked
@@ -48,7 +48,7 @@ files:
   visible: true
   placeholders:
   - offset: 401
-    length: 9
+    length: 0
     placeholder_text: type here
     initial_state:
       length: 9
