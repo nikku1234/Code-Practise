@@ -45,13 +45,13 @@ files:
   visible: true
   placeholders:
   - offset: 220
-    length: 20
+    length: 24
     placeholder_text: write your code here
     initial_state:
       length: 20
       offset: 220
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3 (this comment tells the grading system at Coursera to use python3 rather than python3)
