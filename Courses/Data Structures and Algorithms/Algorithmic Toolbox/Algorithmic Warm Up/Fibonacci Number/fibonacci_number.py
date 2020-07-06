@@ -26,8 +26,6 @@ def fibonacci_number(n):
         return b
 
 
-
-
 if __name__ == '__main__':
     input_n = int(input())
     print(fibonacci_number(input_n))
