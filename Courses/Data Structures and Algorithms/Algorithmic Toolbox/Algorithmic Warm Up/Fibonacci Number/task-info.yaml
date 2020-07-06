@@ -3,14 +3,14 @@ files:
 - name: fibonacci_number.py
   visible: true
   placeholders:
-  - offset: 230
-    length: 9
+  - offset: 225
+    length: 193
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 230
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     # python3
@@ -39,13 +39,13 @@ files:
   visible: true
   placeholders:
   - offset: 334
-    length: 9
+    length: 7
     placeholder_text: type here
     initial_state:
       length: 9
       offset: 334
     initialized_from_dependency: false
-    selected: false
+    selected: true
     status: Unchecked
   text: |
     import unittest
