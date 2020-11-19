@@ -26,7 +26,7 @@ public class Solution {
         /* Print the sum of both integer variables on a new line. */
         System.out.println(i+temp1);
         /* Print the sum of the double variables on a new line. */
-		System.out.println(d+temp2);
+		    System.out.println(d+temp2);
         /* Concatenate and print the String variables on a new line;
         	the 's' variable above should be printed first. */
         System.out.println(s+temp3);
