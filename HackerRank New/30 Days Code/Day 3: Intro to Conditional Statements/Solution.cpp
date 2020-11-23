@@ -24,6 +24,5 @@ int main()
         cout<<"Not Weird";
     }
 
-
     return 0;
 }
