@@ -5,6 +5,7 @@
 using namespace std;
 
 //Write your code here
+//Question states not to use public, but then it would mean to use a struct but, that doesn't make, class made better sense
 class Calculator{
 
     public:
