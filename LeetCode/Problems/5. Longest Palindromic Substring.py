@@ -34,3 +34,40 @@ class Solution(object):
                 right = r
 
         return s[left:right+1]
+
+# Both checking using a loop
+class Solution(object):
+    def longestPalindrome(self, s):
+        """
+        :type s: str
+        :rtype: str
+        """
+
+
+        #return length, left_index,right_index
+        def longestIndex(s,l,r):
+            while l >= 0 and r < len(s) and s[l] == s[r]:
+                l -= 1
+                r += 1
+            l += 1
+            r -= 1
+            return( r - l + 1, l, r)
+
+        longest = 0
+        left = 0
+        right = -1
+
+        for i in xrange(len(s)):
+            for j in xrange(2):
+                length,l,r = longestIndex(s,i,i+j)
+                if length >longest:
+                    longest = length
+                    left = l
+                    right = r
+
+        return s[left:right+1]
+
+
+
+
+        
