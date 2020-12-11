@@ -41,6 +41,8 @@ class Solution(object):
         """
         :type s: str
         :rtype: str
+        time : O(n^2)
+        space : O(1)
         """
 
 
@@ -66,8 +68,3 @@ class Solution(object):
                     right = r
 
         return s[left:right+1]
-
-
-
-
-        
