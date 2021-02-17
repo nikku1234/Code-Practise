@@ -14,3 +14,7 @@ person_info = {
     'lastname' : "Ramesh",
     'fullname' : 'firstname'+' '+'lastname',
     }
+
+# Exercise 2
+print(type(firstname))
+print(len(firstname))
