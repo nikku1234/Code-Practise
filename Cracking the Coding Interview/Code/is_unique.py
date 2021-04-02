@@ -40,13 +40,13 @@ def is_unique(name):
 
 if __name__ == '__main__':
     name ="aabcde"
-    # res = is_unique(name)
-    # print(res)
-    # name1 = "abcde"
-    # res = is_unique(name1)
-    # print(res)
-    # print(hashtable_method(name))
-    # print(hashtable_method(name1))
+    res = is_unique(name)
+    print(res)
+    name1 = "abcde"
+    res = is_unique(name1)
+    print(res)
+    print(hashtable_method(name))
+    print(hashtable_method(name1))
     val = 2
-    print(1<<val)
+    # print(1<<val)
     print(bit_checker(name))
