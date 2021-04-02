@@ -1,0 +1,7 @@
+ASCII v/s Unicode 
+Summary:
+
+1.ASCII uses an 8-bit encoding while Unicode uses a variable bit encoding.
+2.Unicode is standardized while ASCII isn’t.
+3.Unicode represents most written languages in the world while ASCII does not.
+4.ASCII has its equivalent within Unicode.
